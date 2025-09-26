@@ -2,7 +2,7 @@
   "name": "vismit-radiology",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sagaruttarkar.github.io",
+  "homepage": "https://sagaruttarkar.github.io ",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.7",
