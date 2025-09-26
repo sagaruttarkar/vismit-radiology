@@ -1,10 +1,14 @@
 import React from 'react';
-import './App.css';  // <-- This line connects CSS
+import './App.css';  // Global CSS Import
 
 import { Routes, Route } from 'react-router-dom';
+
+// Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ScrollToTopButton from './components/ScrollToTopButton';  // <-- Import ScrollToTopButton
+import ScrollToTopButton from './components/ScrollToTopButton';
+
+// Pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -16,6 +20,7 @@ function App() {
   return (
     <div className="App d-flex flex-column min-vh-100">
       <Navbar />
+      
       <main className="flex-grow-1 p-4">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -27,7 +32,7 @@ function App() {
         </Routes>
       </main>
 
-      {/* Scroll To Top Floating Button */}
+      {/* Floating Scroll to Top Button */}
       <ScrollToTopButton />
 
       <Footer />
