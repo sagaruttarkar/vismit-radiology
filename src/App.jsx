@@ -1,14 +1,7 @@
 import React from 'react';
-import './App.css';  // Global CSS Import
-
 import { Routes, Route } from 'react-router-dom';
-
-// Components
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Footer from './components/Footer';
-import ScrollToTopButton from './components/ScrollToTopButton';
-
-// Pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -18,12 +11,12 @@ import FAQ from './pages/FAQ';
 
 function App() {
   return (
-    <div className="App d-flex flex-column min-vh-100">
-      <Navbar />
-      
-      <main className="flex-grow-1 p-4">
+    <div className="App">
+      <Header />
+
+      <main>
         <Routes>
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/appointment" element={<Appointment />} />
@@ -31,9 +24,6 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
         </Routes>
       </main>
-
-      {/* Floating Scroll to Top Button */}
-      <ScrollToTopButton />
 
       <Footer />
     </div>
