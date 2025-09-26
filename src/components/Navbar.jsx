@@ -25,12 +25,12 @@ function Navbar() {
 
         {/* Desktop Brand Left & Menu Items */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          <Link className="navbar-brand fw-bold d-none d-md-block" to="/">
+          <Link className="navbar-brand fw-bold d-none d-md-block" >
             VISMIT Radiology Center
           </Link>
           <ul className="navbar-nav ms-auto text-center">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/Home">Home</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/about">About Us</Link>

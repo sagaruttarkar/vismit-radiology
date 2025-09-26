@@ -12,7 +12,7 @@ function Header() {
       <div className="header-container">
         <h1 className="logo">VISMIT Radiology Center</h1>
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-          <Link to="/">Home</Link>
+          <Link to="/Home">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/services">Services</Link>
           <Link to="/appointment">Book Appointment</Link>
